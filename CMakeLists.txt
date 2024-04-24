@@ -5,7 +5,10 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(Laboratory_19
         main.c
-        libs/files/files.c
-        libs/files/files.h
+        libs/matrix/matrix.c
+        libs/matrix/matrix.h
+        libs/algorithms/algorithms.h
         libs/tasks/tasks.h
-        libs/tasks/tasks.c)
+        libs/tasks/tasks.h
+        libs/tasks/tasks.c
+        libs/algorithms/algorithms.c)
