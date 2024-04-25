@@ -6,4 +6,6 @@ set(CMAKE_C_STANDARD 11)
 add_executable(Laboratory_19
         main.c
         libs/files/files.c
-        libs/files/files.h)
+        libs/files/files.h
+        libs/tasks/tasks.h
+        libs/tasks/tasks.c)
