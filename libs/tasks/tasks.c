@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "../matrix/matrix.h"
 #include "../algorithms/algorithms.h"
+#include "tasks.h"
 
 void firstTask(char *fileName, matrix *ms, int nMatrices){
     wArrayOfMatrix(fileName, ms, nMatrices);
@@ -35,4 +36,22 @@ void thirdTask(char *fileName, char expression[], double *result){
     sprintf(result_str, " = %lf", *result);
     strcat(expression, result_str);
     wStringToFile(fileName, expression);
+}
+
+void fourthTask(char *fileName, char *s, char *desiredSequence,
+                size_t sizeSequence, char *result){
+    wStringToFile(fileName, s);
+
+    rFilterWordsFromFile(fileName, result, desiredSequence, sizeSequence);
+
+    wStringToFile(fileName, result);
+}
+
+
+void fifthTask(char *fileName, char *s, char *result){
+    wStringToFile(fileName, s);
+
+    getLongestWordsInLineFromFile(fileName, result);
+
+    wStringToFile(fileName, result);
 }

@@ -10,4 +10,9 @@ double* secondTask(char *fileName, double arrayNums[],
 
 void thirdTask(char *fileName, char expression[], double *result);
 
+void fourthTask(char *fileName, char *s, char *desiredSequence,
+                size_t sizeSequence, char *result);
+
+void fifthTask(char *fileName, char *s, char *result);
+
 #endif //LABORATORY_19_TASKS_H

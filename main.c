@@ -1,3 +1,7 @@
-//
-// Created by Виталий Курбанов on 24.04.2024.
-//
+#include <stdio.h>
+#include "libs/tasks/tasks.h"
+
+int main() {
+
+    return 0;
+}
