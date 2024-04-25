@@ -11,4 +11,7 @@ add_executable(Laboratory_19
         libs/tasks/tasks.h
         libs/tasks/tasks.h
         libs/tasks/tasks.c
-        libs/algorithms/algorithms.c)
+        libs/algorithms/algorithms.c
+        libs/vector/vector.c
+        libs/vector/vector.h
+        libs/polynomial/polynomial.c)
