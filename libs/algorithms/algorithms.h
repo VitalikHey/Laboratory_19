@@ -1,13 +1,13 @@
 #ifndef INC_ALGORITHMS_H
 #define INC_ALGORITHMS_H
 
-#include "matrix/matrix.h"
-#include "string_/string_.h"
-#include "polynomial/polynomial.h"
-#include "vector/vector.h"
-#include "athlete/athlete.h"
-#include "product/product.h"
-#include "order/order.h"
+#include "../matrix/matrix.h"
+#include "../string/string.h"
+#include "../polynomial/polynomial.h"
+#include "../vector/vector.h"
+#include "../athlete/athlete.h"
+#include "../product/product.h"
+#include "../order/order.h"
 
 #include <math.h>
 #include <stdio.h>

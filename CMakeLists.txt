@@ -14,4 +14,11 @@ add_executable(Laboratory_19
         libs/algorithms/algorithms.c
         libs/vector/vector.c
         libs/vector/vector.h
-        libs/polynomial/polynomial.c)
+        libs/polynomial/polynomial.c
+        libs/athlete/athlete.h
+        libs/athlete/athlete.c
+        libs/product/product.h
+        libs/order/order.h
+        libs/string/string.h
+        libs/string/string.c
+)
