@@ -19,7 +19,7 @@ bool comp(double firstNum, double secondNum){
 
 
 void testFirstTaskWithNonEmptyMatrices(){
-    char fileName1[50] = "../firstTask1.txt";
+    char fileName1[50] = "../firstTaskOne.txt";
     int nMatrices1 = 4;
     matrix *ms1 = createArrayOfMatrixFromArray(
             (int[]) {
@@ -67,7 +67,7 @@ void testFirstTaskWithNonEmptyMatrices(){
 
 
 void testFirstTaskWithEmptyMatrices(){
-    char fileName2[50] = "../firstTask2.txt";
+    char fileName2[50] = "../firstTaskTwo.txt";
     int nMatrices2 = 0;
     matrix *ms2 = createArrayOfMatrixFromArray(
             (int[]) {}, nMatrices2, 0, 0
@@ -97,7 +97,7 @@ void testFirstTask(){
 
 
 void testSecondTaskWithNonEmptyArray(){
-    char *fileName = "../secondTask1.txt";
+    char *fileName = "../secondTaskThree.txt";
     double arrayNums[17] = {1, 2, 3, 4, 5, 6, 7,
                             8,9, 10.111, 11.121212, 12,
                             13,14, 15, 16, 17};
@@ -119,7 +119,7 @@ void testSecondTaskWithNonEmptyArray(){
 
 
 void testSecondTaskWithEmptyArray(){
-    char *fileName = "../secondTask2.txt";
+    char *fileName = "../secondTaskTwo.txt";
     double arrayNums[0];
     size_t sizeArray = 0;
 
@@ -221,7 +221,7 @@ void testEighthTask(){
     char *fileName = "../eighthTask.txt";
 
     int nMatrices = 3;
-    int n = 3; // подрядок матриц
+    int orderMatrices = 3;
     matrix *ms = createArrayOfMatrixFromArray(
             (int[]) {
                     1, 3, 0,
@@ -235,7 +235,7 @@ void testEighthTask(){
                     1, 2, 3,
                     4, 5, 6,
                     7, 8, 9
-            }, nMatrices, n, n
+            }, nMatrices, orderMatrices, orderMatrices
     );
 
     eighthTask(fileName, ms, nMatrices);
@@ -253,7 +253,7 @@ void testEighthTask(){
                     1, 4, 7,
                     2, 5, 8,
                     3, 6, 9
-            }, nMatrices, n, n
+            }, nMatrices, orderMatrices, orderMatrices
     );
 
     matrix *get = rMatrixFromBinFile(fileName);
@@ -269,16 +269,16 @@ void testNinthTask(){
     int countAthletes = 4;
     athlete arrayAthletes[countAthletes];
 
-    arrayAthletes[0].fullName = "Иванов Иван Иванович";
+    arrayAthletes[0].fullName = "Виталий Курбанов Ринатович";
     arrayAthletes[0].value = 100;
 
-    arrayAthletes[1].fullName = "Петров Петр Петрович";
+    arrayAthletes[1].fullName = "Логачёва Мария Александровна";
     arrayAthletes[1].value = 200;
 
-    arrayAthletes[2].fullName = "Сидоров Сидор Сидорович";
+    arrayAthletes[2].fullName = "Дмитрий Курбанов Ринатович";
     arrayAthletes[2].value = 150;
 
-    arrayAthletes[3].fullName = "Базанов Алексей Петрович";
+    arrayAthletes[3].fullName = "Черников Сергей Викторович";
     arrayAthletes[3].value = 300;
 
     int needAthletes = 2;
@@ -302,12 +302,12 @@ void testTenthTask(){
     size_t countProducts = 3;
     product arrayProducts[countProducts];
 
-    arrayProducts[0].productName = "Тапочки";
+    arrayProducts[0].productName = "Сидр";
     arrayProducts[0].count = 4;
     arrayProducts[0].pricePerUnit = 5;
     arrayProducts[0].allPrice = 20;
 
-    arrayProducts[1].productName = "Лимонадик";
+    arrayProducts[1].productName = "Лимонад";
     arrayProducts[1].count = 3;
     arrayProducts[1].pricePerUnit = 2;
     arrayProducts[1].allPrice = 6;
@@ -323,10 +323,10 @@ void testTenthTask(){
     arrayOrders[0].productName = "Квас";
     arrayOrders[0].count = 5;
 
-    arrayOrders[1].productName = "Лимонадик";
+    arrayOrders[1].productName = "Лимонад";
     arrayOrders[1].count = 2;
 
-    arrayOrders[2].productName = "Тапочки";
+    arrayOrders[2].productName = "Сидр";
     arrayOrders[2].count = 1;
 
     product *rArrayProductsIndicator;
