@@ -258,9 +258,6 @@ bool areTwoMatricesEqual(matrix *m1, matrix *m2){
     return true;
 }
 
-// не стал заморачиваться с оптимизацией алгоритма, можно было проверить
-// сначала позиции единиц, а потом лишь пройтись по строкам, чтобы проверить,
-// что остальные - нули
 bool isEMatrix(matrix *m){
     for (int ind = 0; ind < m->nRows; ind++){
         int sum = getSum(m->values[ind], m->nCols);

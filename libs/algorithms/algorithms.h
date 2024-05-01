@@ -8,7 +8,6 @@
 #include "../athlete/athlete.h"
 #include "../product/product.h"
 #include "../order/order.h"
-
 #include <math.h>
 #include <stdio.h>
 #include <ctype.h>

@@ -21,4 +21,6 @@ add_executable(Laboratory_19
         libs/order/order.h
         libs/string/string.h
         libs/string/string.c
+        libs/test/test.c
+        libs/test/test.h
 )

@@ -23,4 +23,15 @@ void sixthTask(char *fileName, int powers[], double factors[],
 void seventhTask(char *fileName, int numsArray[], size_t sizeArray,
                  vector *positive, vector *negative);
 
+void eighthTask(char *fileName, matrix *ms, int nMatrices);
+
+void ninthTask(char *fileName, athlete *arrayAthletes, int countAthletes,
+               int needAthletes, athlete *rArrayAthletes,
+               athlete **rightAthletes);
+
+void tenthTask(char *fileNameProducts, char *fileNameOrders,
+               product *arrayProducts, size_t countProducts,
+               order *arrayOrders, size_t countOrders,
+               product **rArrayProductsIndicator);
+
 #endif //LABORATORY_19_TASKS_H
